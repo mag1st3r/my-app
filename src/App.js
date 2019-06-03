@@ -23,12 +23,12 @@ class AnalogClok extends React.Component {
                 angle: ( (hour * 30) + (minutes / 2) )
             }
         ];
+
         return hands;
     }
 
     render() {
         const Res = this.getTime();
-        console.log(Res[2].angle);
         return (
 
             <div className="clock simple">
